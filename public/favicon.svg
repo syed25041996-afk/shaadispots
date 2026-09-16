@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#8c2041"/>
+  <!-- Arch Dome -->
+  <path d="M16 48V30C16 21.1634 23.1634 14 32 14C40.8366 14 48 21.1634 48 30V48" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+  <!-- Wedding Rings Interlocking -->
+  <circle cx="28" cy="34" r="8" stroke="#FDE68A" stroke-width="2.5"/>
+  <circle cx="36" cy="34" r="8" stroke="#D4AF37" stroke-width="2.5"/>
+  <!-- Center gem/sparkle -->
+  <path d="M32 24L33.5 28L37.5 29.5L33.5 31L32 35L30.5 31L26.5 29.5L30.5 28L32 24Z" fill="#FDE68A"/>
+  <!-- Base platform -->
+  <path d="M12 48H52" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+</svg>

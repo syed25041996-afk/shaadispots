@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #faf7f2;
+    color: #292524;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar for gallery and filters */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5efe6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a7244c;
+}
+
+/* Canvas styling for 3D viewer */
+.canvas-container {
+  touch-action: none;
+}
+
