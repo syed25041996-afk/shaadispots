@@ -1,6 +1,6 @@
 # ShaadiSpots 💍
 
-> **ShaadiSpots** is a responsive web application and directory for marriage halls, royal banquet venues, and heritage wedding spaces, featuring an interactive 3D spatial preview for every venue.
+**ShaadiSpots** is a responsive web application and directory for marriage halls, royal banquet venues, and heritage wedding spaces, featuring an interactive 3D spatial preview for every venue.
 
 Built with **React 18**, **TypeScript**, **Vite**, **Tailwind CSS**, **React Router**, **TanStack Query**, and **Three.js / React Three Fiber (`@react-three/fiber` & `@react-three/drei`)**.
 
@@ -162,5 +162,6 @@ When you are ready to connect to a live Firebase backend:
    - `createEnquiry`: `addDoc(collection(db, 'enquiries'), { hallId, ...payload, createdAt: serverTimestamp() })`
 3. Because all components consume data through `useHalls()`, `useHall()`, and `createEnquiry()`, **zero UI components will require any modification**.
 
-#   s h a a d i s p o t s  
+#   s h a a d i s p o t s 
+ 
  "# shaadispots" 
