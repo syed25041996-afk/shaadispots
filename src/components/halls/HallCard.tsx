@@ -5,12 +5,12 @@ import {
   Users,
   Star,
   MapPin,
-  Compass,
   Sparkles,
   ArrowRight,
   Leaf
 } from 'lucide-react';
 import { Badge } from '../common/Badge';
+import { SafeImage } from '../common/SafeImage';
 
 interface HallCardProps {
   hall: Hall;
@@ -29,22 +29,17 @@ export const HallCard: React.FC<HallCardProps> = ({ hall }) => {
     <div className="group bg-white rounded-3xl overflow-hidden border border-stone-200/90 shadow-wedding hover:shadow-wedding-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
       {/* Cover Image Container */}
       <div className="relative h-60 w-full overflow-hidden bg-stone-100">
-        <img
-          src={hall.images[0] || 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80'}
+        <SafeImage
+          src={hall.images[0]}
           alt={`${hall.name} wedding hall`}
-          loading="lazy"
+          photoCount={hall.images.length}
+          containerClassName="w-full h-full"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-black/30 pointer-events-none" />
 
         {/* Top Badges */}
         <div className="absolute top-3.5 left-3.5 right-3.5 flex items-center justify-between gap-2 pointer-events-none">
-          {/* 3D Available Badge */}
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase bg-stone-950/80 backdrop-blur-md text-gold-300 border border-gold-500/40 shadow-sm">
-            <Compass className="w-3.5 h-3.5 text-gold-400 animate-spin-slow" />
-            3D Tour
-          </span>
-
           {/* Featured / Veg Badges */}
           <div className="flex items-center gap-1.5">
             {hall.featured && (
@@ -63,7 +58,7 @@ export const HallCard: React.FC<HallCardProps> = ({ hall }) => {
         </div>
 
         {/* Bottom Cover Overlay Info */}
-        <div className="absolute bottom-3 left-4 right-4 flex items-end justify-between text-white">
+        <div className="absolute bottom-3 left-4 right-4 flex items-end justify-between text-white pointer-events-none">
           <div className="flex items-center gap-1.5 text-xs font-medium text-cream-200">
             <MapPin className="w-3.5 h-3.5 text-gold-400 shrink-0" />
             <span className="truncate">{hall.area}, {hall.city}</span>
@@ -102,8 +97,8 @@ export const HallCard: React.FC<HallCardProps> = ({ hall }) => {
           </div>
         </div>
 
-        {/* Pricing & CTA Buttons */}
-        <div className="pt-3 border-t border-stone-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        {/* Pricing & CTA Button */}
+        <div className="pt-3 border-t border-stone-100 flex items-center justify-between gap-3">
           <div>
             <span className="text-[11px] uppercase tracking-wider text-stone-600 font-medium block">
               Rental from
@@ -114,27 +109,14 @@ export const HallCard: React.FC<HallCardProps> = ({ hall }) => {
             </span>
           </div>
 
-          <div className="flex items-center gap-2">
-            {/* View in 3D Button */}
-            <Link
-              to={`/halls/${hall.id}/3d`}
-              className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold bg-stone-900 hover:bg-stone-800 text-gold-300 hover:text-white border border-gold-500/40 shadow-sm transition-all hover:scale-102"
-              title="Launch interactive 3D spatial walkthrough"
-            >
-              <Compass className="w-3.5 h-3.5 text-gold-400" />
-              <span>View in 3D</span>
-            </Link>
-
-            {/* Details Button */}
-            <Link
-              to={`/halls/${hall.id}`}
-              className="inline-flex items-center justify-center p-2 rounded-xl text-xs font-semibold bg-brand-50 hover:bg-brand-100 text-brand-900 border border-brand-200 transition-colors"
-              title="View Hall Specifications & Booking"
-              aria-label={`View details for ${hall.name}`}
-            >
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+          <Link
+            to={`/halls/${hall.id}`}
+            className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-brand-900 hover:bg-brand-950 text-white shadow-sm transition-all hover:scale-102"
+            title="View Hall Specifications & Verified Reviews"
+          >
+            <span>View Details</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
         </div>
       </div>
     </div>

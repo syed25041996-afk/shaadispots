@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sparkles, Compass } from 'lucide-react';
+import { Menu, X, Sparkles, Building2 } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -47,7 +47,7 @@ export const Navbar: React.FC = () => {
                 Shaadi<span className="text-gold-600 font-sans font-extrabold">Spots</span>
               </span>
               <span className="text-[10px] tracking-widest uppercase font-semibold text-stone-600 font-sans mt-0.5">
-                3D Venue Directory
+                Bengaluru Venues
               </span>
             </div>
           </Link>
@@ -78,7 +78,7 @@ export const Navbar: React.FC = () => {
               to="/halls"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-brand-900 to-brand-800 hover:from-brand-950 hover:to-brand-900 text-white text-sm font-semibold shadow-wedding hover:shadow-wedding-lg transition-all duration-300 hover:-translate-y-0.5 border border-gold-500/30"
             >
-              <Compass className="w-4 h-4 text-gold-300 animate-pulse" />
+              <Building2 className="w-4 h-4 text-gold-300" />
               <span>Explore Venues</span>
             </Link>
           </div>
@@ -122,8 +122,8 @@ export const Navbar: React.FC = () => {
               to="/halls"
               className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-brand-900 text-white font-semibold shadow-wedding"
             >
-              <Compass className="w-4 h-4 text-gold-300" />
-              <span>Explore All Venues in 3D</span>
+              <Building2 className="w-4 h-4 text-gold-300" />
+              <span>Explore All Venues</span>
             </Link>
           </div>
         </div>
@@ -131,4 +131,3 @@ export const Navbar: React.FC = () => {
     </header>
   );
 };
-

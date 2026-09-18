@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
               </span>
             </Link>
             <p className="text-stone-400 text-sm leading-relaxed max-w-sm">
-              Discover the most prestigious wedding venues, banquet halls, and royal palaces in your city. Experience interactive 3D spatial walkthroughs before scheduling your site visit.
+              Discover the most prestigious wedding venues, banquet halls, and royal pavilions across Bengaluru. Browse verified photo galleries, genuine Google reviews, and direct management contacts.
             </p>
             <div className="space-y-2 pt-2 text-sm text-stone-300">
               <div className="flex items-center gap-2.5">

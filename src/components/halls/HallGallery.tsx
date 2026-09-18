@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Maximize2, X, ChevronLeft, ChevronRight, Compass } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Maximize2, X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
+import { SafeImage } from '../common/SafeImage';
 
 interface HallGalleryProps {
   images: string[];
@@ -11,7 +11,6 @@ interface HallGalleryProps {
 export const HallGallery: React.FC<HallGalleryProps> = ({
   images,
   hallName,
-  hallId,
 }) => {
   const [selectedIdx, setSelectedIdx] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -24,36 +23,32 @@ export const HallGallery: React.FC<HallGalleryProps> = ({
     setSelectedIdx((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
+  const activeImage = images[selectedIdx] || images[0];
+
   return (
     <div className="space-y-3">
       {/* Main Image Banner */}
       <div className="relative h-80 sm:h-[420px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-wedding border border-stone-200/90 group bg-stone-900">
-        <img
-          src={images[selectedIdx]}
+        <SafeImage
+          key={activeImage}
+          src={activeImage}
           alt={`${hallName} venue view ${selectedIdx + 1}`}
+          containerClassName="w-full h-full"
           className="w-full h-full object-cover transition-all duration-500 ease-out"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-black/20 pointer-events-none" />
 
-        {/* Top Right Action Controls */}
+        {/* Top Right Controls */}
         <div className="absolute top-4 right-4 flex items-center gap-2">
-          {/* 3D Walkthrough Floating Button */}
-          <Link
-            to={`/halls/${hallId}/3d`}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-stone-950/85 hover:bg-stone-900 text-gold-300 hover:text-white backdrop-blur-md border border-gold-500/40 text-xs font-bold shadow-wedding transition-all hover:scale-105"
-          >
-            <Compass className="w-4 h-4 text-gold-400 animate-spin-slow" />
-            <span>Launch 3D Walkthrough</span>
-          </Link>
-
           {/* Lightbox Trigger */}
           <button
             onClick={() => setLightboxOpen(true)}
-            className="p-2.5 rounded-2xl bg-stone-950/80 hover:bg-stone-900 text-white backdrop-blur-md border border-white/20 transition-transform hover:scale-105 shadow-md"
-            title="Expand Photo Lightbox"
+            className="inline-flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-stone-950/80 hover:bg-stone-900 text-white backdrop-blur-md border border-white/20 transition-transform hover:scale-105 shadow-md text-xs font-semibold"
+            title="Expand Fullscreen Photo Lightbox"
             aria-label="Expand Photo Lightbox"
           >
             <Maximize2 className="w-4 h-4" />
+            <span className="hidden sm:inline">View Photos</span>
           </button>
         </div>
 
@@ -62,14 +57,14 @@ export const HallGallery: React.FC<HallGalleryProps> = ({
           <>
             <button
               onClick={prevImage}
-              className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-stone-950/70 hover:bg-stone-950 text-white backdrop-blur-md border border-white/20 transition-all opacity-80 hover:opacity-100"
+              className="absolute left-4 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-stone-950/70 hover:bg-stone-950 text-white backdrop-blur-md border border-white/20 transition-all opacity-80 hover:opacity-100 hover:scale-105"
               aria-label="Previous image"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextImage}
-              className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-stone-950/70 hover:bg-stone-950 text-white backdrop-blur-md border border-white/20 transition-all opacity-80 hover:opacity-100"
+              className="absolute right-4 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-stone-950/70 hover:bg-stone-950 text-white backdrop-blur-md border border-white/20 transition-all opacity-80 hover:opacity-100 hover:scale-105"
               aria-label="Next image"
             >
               <ChevronRight className="w-5 h-5" />
@@ -78,8 +73,9 @@ export const HallGallery: React.FC<HallGalleryProps> = ({
         )}
 
         {/* Bottom Image Counter */}
-        <div className="absolute bottom-4 right-4 px-3 py-1 rounded-full bg-stone-950/70 backdrop-blur-md text-[11px] font-semibold text-white/90 border border-white/10">
-          {selectedIdx + 1} / {images.length} Photos
+        <div className="absolute bottom-4 right-4 px-3 py-1 rounded-full bg-stone-950/75 backdrop-blur-md text-[11px] font-semibold text-white/90 border border-white/10 flex items-center gap-1.5">
+          <Camera className="w-3.5 h-3.5 text-gold-400" />
+          <span>{selectedIdx + 1} / {images.length} Photos</span>
         </div>
       </div>
 
@@ -96,9 +92,10 @@ export const HallGallery: React.FC<HallGalleryProps> = ({
                   : 'border-transparent opacity-70 hover:opacity-100'
               }`}
             >
-              <img
+              <SafeImage
                 src={img}
                 alt={`Thumbnail ${idx + 1}`}
+                containerClassName="w-full h-full"
                 className="w-full h-full object-cover"
               />
             </button>
@@ -128,10 +125,11 @@ export const HallGallery: React.FC<HallGalleryProps> = ({
 
           {/* Lightbox Image Container */}
           <div className="relative flex-1 flex items-center justify-center my-4 overflow-hidden">
-            <img
-              src={images[selectedIdx]}
+            <SafeImage
+              src={activeImage}
               alt={`${hallName} full view`}
-              className="max-h-[85vh] max-w-[90vw] object-contain rounded-2xl shadow-2xl transition-all duration-300"
+              containerClassName="max-h-[85vh] max-w-[90vw] rounded-2xl shadow-2xl overflow-hidden"
+              className="max-h-[85vh] max-w-[90vw] object-contain rounded-2xl"
             />
 
             {images.length > 1 && (
@@ -164,7 +162,7 @@ export const HallGallery: React.FC<HallGalleryProps> = ({
                   selectedIdx === idx ? 'border-gold-400 scale-105' : 'border-transparent opacity-50'
                 }`}
               >
-                <img src={img} alt="" className="w-full h-full object-cover" />
+                <SafeImage src={img} alt="" containerClassName="w-full h-full" className="w-full h-full object-cover" />
               </button>
             ))}
           </div>
@@ -173,4 +171,3 @@ export const HallGallery: React.FC<HallGalleryProps> = ({
     </div>
   );
 };
-

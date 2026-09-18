@@ -1,11 +1,11 @@
-import { DUMMY_HALLS } from '../data/halls';
+import { ALL_HALLS } from '../data/halls';
 import { Hall, HallFilters, EnquiryPayload } from '../types/hall';
 
 /**
  * Single Service Layer for Venue & Hall Data Access
  *
  * ARCHITECTURAL RULE:
- * Components MUST NEVER import DUMMY_HALLS directly.
+ * Components MUST NEVER import ALL_HALLS directly.
  * All UI access must flow through these async functions returning Promises.
  * To migrate to Firebase/Firestore in the future:
  *   Replace the internal mock resolution with Firestore queries (e.g. `getDocs(query(...))`
@@ -25,7 +25,7 @@ export async function getAllHalls(filters?: HallFilters): Promise<Hall[]> {
   // Simulate network round-trip latency
   await delay(250);
 
-  let results = [...DUMMY_HALLS];
+  let results = [...ALL_HALLS];
 
   if (!filters) {
     return results;
@@ -130,7 +130,7 @@ export async function getHallById(id: string): Promise<Hall | null> {
   // Simulate network latency
   await delay(200);
 
-  const hall = DUMMY_HALLS.find((h) => h.id === id);
+  const hall = ALL_HALLS.find((h) => h.id === id);
   return hall ? { ...hall } : null;
 }
 

@@ -76,7 +76,7 @@ export const ListingsPage: React.FC = () => {
             Marriage Halls & Banquets Directory
           </h1>
           <p className="text-xs sm:text-sm text-stone-600 mt-1 max-w-2xl">
-            Compare guest capacities, rental fees, and floor specs. Click "View in 3D" to launch an interactive spatial walkthrough.
+            Compare guest capacities, rental fees, and amenities. Browse verified Google ratings, reviews, and high-resolution venue photo galleries.
           </p>
         </div>
 

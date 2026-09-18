@@ -77,17 +77,39 @@ wedding-halls-website/
     │   │   ├── QuickFilterChips.tsx  # Quick area filter buttons
     │   │   └── StatsStrip.tsx        # 120+ venues, 15k couples stats
     │   └── viewer3d/
-    │       ├── Hall3DViewer.tsx      # Code-split 3D canvas & layout
+    │       ├── Hall3DViewer.tsx      # Main canvas: Physics, Environment, SoftShadows, PostProcessing
     │       ├── Hall3DModel.tsx       # GLTF loader with auto-fit bounding box
-    │       ├── Hall3DProcedural.tsx  # Procedural hall derived from dimensions
-    │       ├── CameraControls.tsx    # OrbitControls & First-person WASD
-    │       ├── ViewerOverlay.tsx     # HUD overlay, mode switch & presets
-    │       └── WebGLFallback.tsx     # Graceful fallback when WebGL disabled
+    │       ├── Hall3DProcedural.tsx  # Procedural hall with polished marble floor & warm lighting
+    │       ├── CameraControls.tsx    # OrbitControls & preset transitions
+    │       ├── ViewerOverlay.tsx     # HUD overlay, people counter, talking badge & controls
+    │       ├── WebGLFallback.tsx     # Graceful fallback when WebGL is disabled
+    │       ├── character/
+    │       │   ├── CharacterRig.tsx      # Modular character abstraction (procedural vs gltf)
+    │       │   ├── ProceduralAvatar.tsx   # Articulated humanoid primitive rig & procedural anims
+    │       │   ├── PlayerController.tsx   # Rapier KinematicCharacterController, jump & seating
+    │       │   ├── ThirdPersonCamera.tsx  # Collision raycasting, mouse orbit & 1st/3rd toggle
+    │       │   ├── types.ts               # Animation states, archetypes & input types
+    │       │   └── materialPalette.ts     # Shared material cache for 60fps with 40+ NPCs
+    │       ├── seating/
+    │       │   ├── SeatingManager.ts      # Procedural seat anchors, occupancy & exit spots
+    │       │   └── SeatPrompt.tsx         # Floating 3D interaction indicators ("Press E to sit")
+    │       ├── npc/
+    │       │   ├── NPCGuest.tsx           # Autonomous NPC entity (state machine, LOD & freeze)
+    │       │   ├── NPCManager.tsx         # Population spawner (30-55 NPCs) & shadow LOD
+    │       │   └── npcBehavior.ts         # Seeding, state transitions & obstacle avoidance
+    │       ├── conversation/
+    │       │   ├── DialogueOverlay.tsx    # 2D HTML dialogue panel with typewriter effect
+    │       │   └── useDialogue.ts         # Dialogue progression & table auto-chat
+    │       ├── controls/
+    │       │   ├── VirtualJoystick.tsx    # Mobile virtual touch joystick & action buttons
+    │       │   └── useInputControls.ts    # Unified keyboard and touch input listener
+    │       └── physics/
+    │           └── HallColliders.tsx      # Rapier rigidbodies for floor, walls, stage & tables
     └── pages/
         ├── HomePage.tsx              # Home landing page
         ├── ListingsPage.tsx          # Venue directory with sidebar filters
         ├── HallDetailPage.tsx        # Venue details & enquiry page
-        ├── Hall3DPage.tsx            # Fullscreen 3D spatial route (/halls/:id/3d)
+        ├── Hall3DPage.tsx            # Fullscreen 3D spatial route with progress loader
         ├── AboutPage.tsx             # About story & 3D digital twin philosophy
         ├── ContactPage.tsx           # Concierge desk, partner listing & FAQs
         └── NotFoundPage.tsx          # 404 page
@@ -152,6 +174,80 @@ To replace the dummy models with real architectural scans or LiDAR digital twins
 
 ---
 
+## 🎮 Interactive 3D Walkthrough Controls
+
+The 3D Venue Simulator features a third-person physics-driven character controller, procedural animations, seating anchors, autonomous NPC guests, and dialogue systems.
+
+### Desktop Controls
+| Action | Key / Input | Notes |
+| :--- | :--- | :--- |
+| **Move** | `W` `A` `S` `D` or Arrow Keys | Character smoothly lerps rotation to travel direction |
+| **Run** | `Shift` (hold) | Faster speed (7.2 m/s), dynamic forward lean & extended leg stride |
+| **Jump** | `Space` | Vertical impulse with ground-check raycast |
+| **Interact / Sit** | `E` | Sits at nearest empty chair or initiates conversation with an NPC |
+| **Stand Up** | `W` or `Space` | Smoothly tweens character back to standing spot behind chair |
+| **Swivel in Chair** | `A` / `D` | Rotates character ±60° while seated |
+| **Dialogue Advance** | `Space` or Click | Advances typewriter dialogue line letter-by-letter |
+| **Dialogue Close** | `ESC` | Ends dialogue and restores third-person camera |
+| **Camera Orbit** | Left Mouse Drag | Orbits camera around character when not pointer-locked |
+| **Mouse Look (FPS)** | Crosshair Icon or Canvas Click | Locks pointer for direct mouse look; `ESC` to release |
+| **1st / 3rd Person View** | `V` or Camera Icon | Toggles between over-the-shoulder third person and eye-level first person |
+| **Camera Collision** | *Automatic* | Physics raycast pulls camera forward to prevent clipping through walls |
+
+### Mobile Touch Controls
+- **Virtual Joystick (Left Thumb)**: Smooth 360° analog thumbstick for walking and steering.
+- **Action Buttons (Right Thumb)**:
+  - **Action Button**: Contextual button to sit down at chairs or talk to NPCs.
+  - **Jump / Stand Button**: Performs jumps while walking, or stands up when seated.
+- **Camera Orbit**: Drag with one finger on the upper canvas area to look around.
+
+---
+
+## 📦 Required NPM Packages
+
+To install the physics and post-processing modules used for the 3D walkthrough:
+
+```bash
+npm i @react-three/rapier@1.5.0 @react-three/postprocessing@2.16.3 postprocessing
+```
+
+> **Note**: `@react-three/rapier@1.5.0` and `@react-three/postprocessing@2.16.3` are matched to React 18 and `@react-three/fiber@8.x`.
+
+---
+
+## 🕺 Swapping in Mixamo Humanoid Characters
+
+The character system is strictly decoupled into a mesh representation layer (`CharacterRig.tsx`) and a physics/state layer (`PlayerController.tsx`, `NPCGuest.tsx`). To replace the procedural primitive rig with photorealistic Mixamo 3D models:
+
+1. **Download from Mixamo**:
+   - Pick any humanoid avatar on [Mixamo](https://www.mixamo.com/).
+   - Download the model in **T-Pose** (FBX/glTF).
+   - Download the standard animation clips (without skin):
+     - `Idle` (name clip: `idle`)
+     - `Walking` (in-place, name clip: `walk`)
+     - `Running` (in-place, name clip: `run`)
+     - `Jumping` (name clip: `jump`)
+     - `Sitting` (name clip: `sit`)
+     - `Talking` (name clip: `talk`)
+
+2. **Pack into GLB**:
+   - In Blender, import the avatar and add each action into the NLA editor.
+   - Export as a Draco-compressed `.glb` to `/public/models/avatars/guest-mixamo.glb`.
+
+3. **Activate the GLTF Rig**:
+   In `src/components/viewer3d/character/CharacterRig.tsx`:
+   ```tsx
+   <CharacterRig
+     rig="gltf"
+     gltfModelUrl="/models/avatars/guest-mixamo.glb"
+     animState={animState}
+     castShadow={castShadow}
+   />
+   ```
+   The existing `animState` machine (`idle`, `walk`, `run`, `jump`, `sit`, `talk`) maps directly to the GLTF animation actions via `useAnimations()`, requiring zero changes to movement physics, Rapier colliders, seating tweening, or dialogue interactions.
+
+---
+
 ## Switching to Firebase Firestore
 
 When you are ready to connect to a live Firebase backend:
@@ -162,5 +258,5 @@ When you are ready to connect to a live Firebase backend:
    - `createEnquiry`: `addDoc(collection(db, 'enquiries'), { hallId, ...payload, createdAt: serverTimestamp() })`
 3. Because all components consume data through `useHalls()`, `useHall()`, and `createEnquiry()`, **zero UI components will require any modification**.
 
-#   s h a a d i s p o t s  
- "# shaadispots" 
+#   s h a a d i s p o t s  
+ "# shaadispots"

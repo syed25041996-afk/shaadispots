@@ -5,11 +5,11 @@ import { QuickFilterChips } from '../components/home/QuickFilterChips';
 import { FeaturedCarousel } from '../components/home/FeaturedCarousel';
 import { useHalls } from '../hooks/useHalls';
 import {
-  Compass,
-  Eye,
+  Camera,
   ShieldCheck,
   ArrowRight,
-  Heart
+  Heart,
+  Star
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -30,7 +30,7 @@ export const HomePage: React.FC = () => {
       {/* 4. Featured Venues Showcase */}
       {!isLoading && halls.length > 0 && <FeaturedCarousel halls={halls} />}
 
-      {/* 5. Why Choose ShaadiSpots 3D Feature Section */}
+      {/* 5. Why Choose ShaadiSpots Feature Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-gradient-to-br from-brand-950 via-stone-900 to-brand-900 rounded-3xl p-8 sm:p-12 lg:p-16 text-white shadow-wedding-lg border border-gold-500/30 relative overflow-hidden">
           {/* Background Ambient Glow */}
@@ -38,15 +38,15 @@ export const HomePage: React.FC = () => {
 
           <div className="relative z-10 max-w-3xl space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-xs font-semibold tracking-wide border border-gold-400/30">
-              <Compass className="w-4 h-4 text-gold-400" />
-              <span>Next-Generation Venue Scouting</span>
+              <Camera className="w-4 h-4 text-gold-400" />
+              <span>Verified Wedding Venue Directory</span>
             </div>
             <h2 className="font-serif font-extrabold text-2xl sm:text-4xl lg:text-5xl tracking-tight text-cream-100">
               Never Book A Marriage Hall{' '}
               <span className="text-gold-300">Blindly Again</span>
             </h2>
             <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-              Traditional photos with wide-angle lenses can be misleading. ShaadiSpots transforms how families inspect venues by providing millimeter-precise 3D digital twins.
+              Misleading promotional brochures and hidden costs can ruin wedding planning. ShaadiSpots aggregates authentic Google Places data, genuine host reviews, high-definition photo galleries, and transparent pricing.
             </p>
           </div>
 
@@ -54,26 +54,26 @@ export const HomePage: React.FC = () => {
             {/* Feature 1 */}
             <div className="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 space-y-3">
               <div className="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-300 flex items-center justify-center border border-gold-500/30">
-                <Compass className="w-6 h-6" />
+                <Camera className="w-6 h-6" />
               </div>
               <h3 className="font-serif font-bold text-lg text-white">
-                Interactive 3D Walkthrough
+                Real Photo Galleries
               </h3>
               <p className="text-xs text-stone-300 leading-relaxed">
-                Freely orbit around the banquet hall, inspect the stage elevation, and walk down the bridal aisle using first-person WASD controls.
+                Inspect genuine photos uploaded by guests and hosts — check mandap decoration, dining hall cleanliness, and evening lighting.
               </p>
             </div>
 
             {/* Feature 2 */}
             <div className="p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 space-y-3">
               <div className="w-12 h-12 rounded-xl bg-brand-500/20 text-rose-300 flex items-center justify-center border border-rose-500/30">
-                <Eye className="w-6 h-6" />
+                <Star className="w-6 h-6" />
               </div>
               <h3 className="font-serif font-bold text-lg text-white">
-                True Spatial Proportions
+                Verified Google Reviews
               </h3>
               <p className="text-xs text-stone-300 leading-relaxed">
-                Derive real table density, seating clearance, and ceiling heights from verified hall dimensions. Know exactly how 800 guests will feel.
+                Read unfiltered feedback from families who conducted Muhurtham and Sangeet ceremonies at each hall in Bengaluru.
               </p>
             </div>
 
@@ -83,7 +83,7 @@ export const HomePage: React.FC = () => {
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="font-serif font-bold text-lg text-white">
-                Direct Venue Pricing
+                Direct Management Rates
               </h3>
               <p className="text-xs text-stone-300 leading-relaxed">
                 Zero middleman commissions. Connect directly with banquet managers, inspect open dates, and negotiate genuine seasonal packages.
@@ -96,14 +96,14 @@ export const HomePage: React.FC = () => {
               to="/halls"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-gold-500 to-amber-500 hover:from-gold-400 hover:to-amber-400 text-stone-950 font-bold text-sm shadow-gold-glow transition-all"
             >
-              <span>Explore All 3D Venues</span>
+              <span>Explore All 250+ Venues</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
               to="/about"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm border border-white/20 transition"
             >
-              How 3D Digital Twins Work
+              How ShaadiSpots Works
             </Link>
           </div>
         </div>
@@ -120,7 +120,7 @@ export const HomePage: React.FC = () => {
             Loved By Couples & Families
           </h2>
           <p className="text-xs sm:text-sm text-stone-500 mt-1">
-            Read how couples used ShaadiSpots 3D to plan their dream wedding without travelling across the city.
+            Read how couples used ShaadiSpots to find their ideal banquet hall across Bengaluru.
           </p>
         </div>
 
@@ -128,33 +128,35 @@ export const HomePage: React.FC = () => {
           {[
             {
               quote:
-                'We live in London and had to plan our wedding in Bengaluru. The 3D walkthrough allowed us to see the stage and table layout so clearly that we booked with complete confidence!',
+                'We live in London and had to plan our wedding in Bengaluru. Having real Google reviews and genuine photo galleries allowed us to shortlist and book with complete confidence!',
               author: 'Dr. Priya & Kunal',
-              event: 'Wedding at The Tamarind Tree Heritage Pavilion',
+              event: 'Wedding at Palace Grounds',
             },
             {
               quote:
-                'Checking the table spacing in the 3D model helped us realize we needed a 1,200 guest venue instead of 800. Saved us from a chaotic seating crunch on our big day.',
+                'Checking the verified guest counts and parking capacities saved us from a chaotic seating crunch. The direct manager contact was super helpful.',
               author: 'Rohit & Megha Kapoor',
-              event: 'Reception at Royal Orchid Convention',
+              event: 'Reception in JP Nagar',
             },
             {
               quote:
-                'Being able to switch between Orbit view and walking through the aisle in first-person is brilliant. ShaadiSpots made venue hunting genuinely fun.',
+                'Being able to filter by pure veg, guest rooms, and AC made venue hunting fast and stress-free. ShaadiSpots made finding a Kalyana Mantapa genuinely fun.',
               author: 'Simran & Harpreet',
-              event: 'Anand Karaj at Moti Mahal Royale',
+              event: 'Anand Karaj in Yelahanka',
             },
           ].map((t, idx) => (
             <div
               key={idx}
-              className="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-wedding space-y-4 flex flex-col justify-between"
+              className="p-6 rounded-3xl bg-white border border-stone-200/80 shadow-wedding space-y-4 flex flex-col justify-between"
             >
-              <p className="text-stone-600 text-xs sm:text-sm leading-relaxed italic">
+              <p className="text-stone-600 text-xs sm:text-sm italic leading-relaxed">
                 "{t.quote}"
               </p>
               <div className="pt-3 border-t border-stone-100">
-                <p className="font-serif font-bold text-stone-900 text-sm">{t.author}</p>
-                <p className="text-[11px] text-brand-800 font-medium">{t.event}</p>
+                <span className="font-serif font-bold text-stone-900 text-sm block">
+                  {t.author}
+                </span>
+                <span className="text-[11px] text-brand-800 font-medium">{t.event}</span>
               </div>
             </div>
           ))}

@@ -2,14 +2,14 @@ import React from 'react';
 import { Hall } from '../../types/hall';
 import {
   Users,
-  Maximize,
   UtensilsCrossed,
   Wind,
   Car,
   Bed,
   Flame,
-  Calendar,
-  Layers
+  Star,
+  MapPin,
+  CheckCircle
 } from 'lucide-react';
 
 interface HallSpecsProps {
@@ -30,42 +30,42 @@ export const HallSpecs: React.FC<HallSpecsProps> = ({ hall }) => {
       icon: Users,
       label: 'Guest Capacity',
       value: `${hall.capacityMin} to ${hall.capacityMax} Guests`,
-      sub: `Comfortably accommodates large gatherings`,
+      sub: 'Comfortably accommodates seating & floating guests',
     },
     {
-      icon: Maximize,
-      label: 'Hall Dimensions',
-      value: `${hall.dimensions.width}m (W) × ${hall.dimensions.length}m (L)`,
-      sub: `Ceiling Height: ${hall.dimensions.height} metres`,
+      icon: Star,
+      label: 'Google Rating',
+      value: `${hall.rating} ★ Rating`,
+      sub: `Based on ${hall.reviewCount.toLocaleString()} verified Google reviews`,
     },
     {
-      icon: Layers,
-      label: 'Floor Area & Tables',
-      value: `${hall.dimensions.width * hall.dimensions.length} sq. metres`,
-      sub: `${hall.tableCount} Banquet Round Tables`,
+      icon: MapPin,
+      label: 'Locality & Area',
+      value: `${hall.area}, Bengaluru`,
+      sub: 'Convenient road and metro connectivity',
     },
     {
       icon: UtensilsCrossed,
       label: 'Food Policy',
-      value: hall.vegOnly ? 'Strictly Pure Vegetarian' : 'Veg & Non-Veg Available',
+      value: hall.vegOnly ? 'Strictly Pure Vegetarian' : 'Veg & Non-Veg Permitted',
       sub: `From ${formatCurrency(hall.pricePerPlate)} per plate`,
     },
     {
       icon: Wind,
       label: 'Air Conditioning',
-      value: hall.isAC ? '100% Climate Controlled' : 'Non-AC / Ventilated',
-      sub: 'Central HVAC with air filters',
+      value: hall.isAC ? '100% Climate Controlled' : 'Natural Ventilation',
+      sub: 'Central HVAC with generator backup',
     },
     {
       icon: Car,
-      label: 'Parking Space',
-      value: hall.hasParking ? 'Dedicated Valet Parking' : 'Street Parking',
-      sub: 'Security surveillance included',
+      label: 'Parking Facility',
+      value: hall.hasParking ? 'Dedicated Valet Parking' : 'Street & Shared Parking',
+      sub: 'Security and parking attendants included',
     },
     {
       icon: Bed,
       label: 'Bridal & Guest Rooms',
-      value: hall.hasRooms ? 'Suites & Guest Rooms Available' : 'Bridal Dressing Suite Only',
+      value: hall.hasRooms ? 'AC Suites & Guest Rooms' : 'Bridal Dressing Suite Only',
       sub: 'Private washroom & vanity mirror',
     },
     {
@@ -81,15 +81,15 @@ export const HallSpecs: React.FC<HallSpecsProps> = ({ hall }) => {
       <div className="flex items-center justify-between pb-4 border-b border-stone-100">
         <div>
           <h3 className="font-serif font-bold text-xl text-stone-900">
-            Venue Specifications & Layout
+            Venue Specifications & Highlights
           </h3>
           <p className="text-xs text-stone-600 mt-1">
-            Exact spatial measurements verified by our 3D spatial team
+            Verified data sourced directly from Google Places and venue administration
           </p>
         </div>
-        <span className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-gold-100 text-gold-900 border border-gold-300/80">
-          <Calendar className="w-3.5 h-3.5 text-gold-700" />
-          Verified Specs
+        <span className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-300">
+          <CheckCircle className="w-3.5 h-3.5 text-emerald-600" />
+          Verified Listing
         </span>
       </div>
 
@@ -119,4 +119,3 @@ export const HallSpecs: React.FC<HallSpecsProps> = ({ hall }) => {
     </div>
   );
 };
-

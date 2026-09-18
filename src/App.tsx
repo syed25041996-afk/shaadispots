@@ -7,7 +7,6 @@ import { Footer } from './components/common/Footer';
 import { HomePage } from './pages/HomePage';
 import { ListingsPage } from './pages/ListingsPage';
 import { HallDetailPage } from './pages/HallDetailPage';
-import { Hall3DPage } from './pages/Hall3DPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -31,27 +30,23 @@ const ScrollToTop = () => {
   return null;
 };
 
-// Layout controller to omit header & footer on fullscreen 3D route
+// Layout controller
 const AppLayout: React.FC = () => {
-  const location = useLocation();
-  const is3DRoute = location.pathname.endsWith('/3d');
-
   return (
     <div className="min-h-screen flex flex-col bg-cream-100 text-stone-800">
       <ScrollToTop />
-      {!is3DRoute && <Navbar />}
-      <main className={`flex-1 ${is3DRoute ? 'h-screen w-screen p-0 m-0' : ''}`}>
+      <Navbar />
+      <main className="flex-1">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/halls" element={<ListingsPage />} />
           <Route path="/halls/:id" element={<HallDetailPage />} />
-          <Route path="/halls/:id/3d" element={<Hall3DPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
-      {!is3DRoute && <Footer />}
+      <Footer />
     </div>
   );
 };
@@ -69,4 +64,3 @@ export const App: React.FC = () => {
 };
 
 export default App;
-

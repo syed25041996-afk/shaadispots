@@ -1,0 +1,2090 @@
+{
+  "generatedAt": "2026-09-18T11:37:46.706Z",
+  "breakdown": {
+    "nearby_search": {
+      "requests": 30,
+      "estimatedCostUsd": 0.96
+    },
+    "text_search": {
+      "requests": 0,
+      "estimatedCostUsd": 0
+    },
+    "place_details": {
+      "requests": 257,
+      "estimatedCostUsd": 4.369
+    }
+  },
+  "estimatedTotalCostUsd": 5.329,
+  "assumedFreeCreditUsd": 200,
+  "callLog": [
+    {
+      "timestamp": "2026-09-18T11:36:33.771Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9716,
+        "lng": 77.5946,
+        "page": 1
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:36.179Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9716,
+        "lng": 77.5946,
+        "page": 2
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:38.587Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9716,
+        "lng": 77.5946,
+        "page": 3
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:39.175Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9351,
+        "lng": 77.6146,
+        "page": 1
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:41.661Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9351,
+        "lng": 77.6146,
+        "page": 2
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:44.086Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9351,
+        "lng": 77.6146,
+        "page": 3
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:44.546Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9081,
+        "lng": 77.6476,
+        "page": 1
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:46.941Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9081,
+        "lng": 77.6476,
+        "page": 2
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:49.375Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9081,
+        "lng": 77.6476,
+        "page": 3
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:49.837Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 13.0358,
+        "lng": 77.597,
+        "page": 1
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:52.183Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 13.0358,
+        "lng": 77.597,
+        "page": 2
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:54.575Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 13.0358,
+        "lng": 77.597,
+        "page": 3
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:54.993Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 13.1007,
+        "lng": 77.5963,
+        "page": 1
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:57.406Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 13.1007,
+        "lng": 77.5963,
+        "page": 2
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:36:59.819Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 13.1007,
+        "lng": 77.5963,
+        "page": 3
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:00.477Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9755,
+        "lng": 77.5058,
+        "page": 1
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:02.912Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9755,
+        "lng": 77.5058,
+        "page": 2
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:05.513Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9755,
+        "lng": 77.5058,
+        "page": 3
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:06.003Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.8988,
+        "lng": 77.5748,
+        "page": 1
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:08.359Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.8988,
+        "lng": 77.5748,
+        "page": 2
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:10.790Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.8988,
+        "lng": 77.5748,
+        "page": 3
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:11.247Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.8452,
+        "lng": 77.6602,
+        "page": 1
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:13.616Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.8452,
+        "lng": 77.6602,
+        "page": 2
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:15.991Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.8452,
+        "lng": 77.6602,
+        "page": 3
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:16.402Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9634,
+        "lng": 77.7359,
+        "page": 1
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:18.717Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9634,
+        "lng": 77.7359,
+        "page": 2
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:21.413Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9634,
+        "lng": 77.7359,
+        "page": 3
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:21.843Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9855,
+        "lng": 77.7095,
+        "page": 1
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:24.172Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9855,
+        "lng": 77.7095,
+        "page": 2
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:26.473Z",
+      "callType": "nearby_search",
+      "meta": {
+        "lat": 12.9855,
+        "lng": 77.7095,
+        "page": 3
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:26.780Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJgbLEumIWrjsRXZ1u1oIUcFU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:26.857Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJU3WorBoXrjsRB-gwiDIAk10"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:26.943Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ-R1BTosVrjsRV4w2WjFniCk"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.026Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJeSVTQTUWrjsRfSeyoft6TUU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.122Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJVVVVVSoWrjsRaO_aMp1JzZc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.220Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ-TUz8UoWrjsRAcNAhMDQLfw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.318Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ1USPfEQWrjsRNL4aJSJfWp4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.397Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJt_kulRc_rjsRUiFgwc_uYaY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.482Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJvVRXPXMVrjsRgmoOeQ8qAbE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.570Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ_dLn5DUWrjsRl10axHQox_g"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.645Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJrwtE8D0XrjsRWG8nLpW0t5I"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.717Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ9X30f18WrjsR8OFJvAjGPvE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.807Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJhQ7WVH4WrjsR2IEX3M4EIQc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.890Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJY51mCDYWrjsR9jUulpJbFB8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:27.966Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJVVXl8GUWrjsRkwj0yscgZVg"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.051Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJdSVXdSwXrjsR5xicBiloG68"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.120Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ0W7x4pQTrjsRYkbDqI-gfYc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.205Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJNyu0SPAXrjsRimWDDEdfhKs"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.285Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJDQfQ3UkWrjsRoUEL8PFZSl0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.386Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJncylXVYXrjsRaFkfdWtSu6g"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.495Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJoZYteAAXrjsRheH-YS0snpg"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.566Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJVWwW3ssXrjsRACeZfhbBbBY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.657Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJo5Sy0_EVrjsRjo5bInjmNSQ"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.723Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJqaFYVZ0VrjsRJkFFOCgUcFM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.807Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJZ7xBrX4ZrjsRoe9mqDHgXwk"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.874Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJjxY4jmIWrjsRYHrXI1-l6d4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:28.954Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJd6bsMmAXrjsRhqgNSPdnn9c"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.032Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJmcVCCcQVrjsRtW-oMRnIYYY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.114Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ8_b9jIRrrjsRn-yP9iCpIGs"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.179Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJzUBZBkkWrjsR-cik5QqrOm8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.261Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJAQAA5PZNrjsRBwqCz8cv_C4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.343Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJvXW0K7QVrjsRpzL4wu_hnLU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.423Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJb5CMdjgVrjsRw8RYUidk0PA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.499Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJQS0NvhIVrjsRpWlLDMDGN0U"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.591Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJI5u-J_YWrjsRDAWSZwZJ9Us"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.674Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJYZrtIAUjrjsRLJOv6AxyVsY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.754Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJGwfVLvQ9rjsRkUHQmJhAav8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.829Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJQR-CkmcWrjsRd-Tx4eeLXlc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.897Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJobLNGvAWrjsRs7ZW6GUpl2U"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:29.972Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJVfVjnR4XrjsRMnDGK67yaYk"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.048Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ1difUWAWrjsRkBoWgI79Ink"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.116Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJvwipzq0VrjsRKfF28fsXdEk"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.195Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJf-CWVpEVrjsRiW21pmyTrUw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.271Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ7a4LJc1BrjsRTLSaxelkmGg"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.341Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJobOiCG8VrjsRpq26klI8ovU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.413Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJmbWwF_kWrjsRES874HRkUD8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.482Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJVSVTOXkXrjsRe4bc3OCndc8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.549Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ_5_cg6wVrjsR80eXDa0Tid8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.623Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJzeHjtXgWrjsRK7MwJrWG17k"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.700Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJdX9ByAg-rjsRBqfda91zB6Y"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.772Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJrzkPcnoWrjsRx7vzugHAFgY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.861Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJOYoyzYAVrjsRenSr312Rp9M"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.924Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ3exFgoQVrjsRZnKH6n5U4F0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:30.996Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJFel_Bng9rjsRkk7A6AIZlyc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.064Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJqRnFQUMXrjsR3pFcdM950Vs"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.139Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ69I71LsXrjsR3_-cafUBQS0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.216Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJaU-Y4iQYrjsR3nYqfPI0MdQ"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.279Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJx53e-Co9rjsRqKrTwlX2_6U"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.359Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJA3clfJUVrjsRMsbqtqTs0Y4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.430Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJX7-YOTEjrjsR2w_2Bk9JlfA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.507Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ1wU5AREUrjsRPnx_k9GEW2g"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.573Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJNfItH6IVrjsRPzKQcX7bg2M"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.650Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJXUk5LUwUrjsRCAEMUIh4vko"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.716Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJTVFY1q0VrjsRlBMV3Ip-HVw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.794Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJr4N8eK4VrjsRbXwREFo2Jxw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.869Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJz7WGLQQVrjsRKO1QnFKiwQU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:31.938Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJI3ksqE8UrjsRqY1evFY0jQ0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.010Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJtX_lIvcUrjsRxpAoSaZR4Qs"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.077Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJB3uQmPEVrjsRkerm0xmu4pY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.155Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJQdcgXZwVrjsRU_pEEB6i8zA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.227Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJQzWg5CQVrjsRRgqoZd-zQhw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.297Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ7QA0-a0VrjsR5LUshXm5UMM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.366Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJV8gYYakVrjsRRJxQKSTygs0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.443Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJW1hPEDkVrjsRN3A2j-lPQZ0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.513Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ_cDGa6wVrjsRY-DV-_obwXc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.584Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJbxaB-TEVrjsRXcbsGKnbVss"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.657Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJl68nVwMVrjsRmZEvmUYxiTc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.719Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ0fhJ9o5rrjsRLfoIHDXdzb4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.787Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJVcY4JgUVrjsRfrSh4O_fVKU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.860Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJrf8WHzIUrjsRwfxnNLiXc2k"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:32.934Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJadNYFz8VrjsRI5GKiI86vts"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.007Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJX5f5nKIVrjsRCs4_S-9RXL8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.078Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ7YyofOsSrjsRpED3pMCXBuY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.149Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJVTDt1aEVrjsRUCzUYfj5WrE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.221Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJz5mQu3gVrjsRKItVXUmEhOs"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.299Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJU4fV43YVrjsRdwCM2kJEjJo"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.370Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJzRC_hL0UrjsRq-uf5ycC0qg"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.433Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJHUd2cbEVrjsR0pVfeiqyZRY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.516Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJfbbJV5cVrjsRRKcvC5CCpr4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.589Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJZ6wE01NrrjsRFlt7DmG4Cus"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.657Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJrcvDH44UrjsR3r-h-oAulr4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.730Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ3znderUTrjsRAi223m1TwFU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.793Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJIYN6zzUVrjsRnLvMEu8xl_w"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.864Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJU55LWzQTrjsRq-C6IFcheXU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:33.945Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJsQSQ-p4UrjsRVKVGMjWHFdU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.023Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ89tjplJrrjsRgeEscBhyIPI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.092Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJw9YCeABrrjsRpk14fR8SRQA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.152Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ6YwygYUTrjsRBqqb4mXWpdA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.224Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJUdag2YwVrjsR2xqr_jtEc_4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.300Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJPYvbk5YTrjsRBcHjUVCz8UI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.370Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJZVgn0TxBrjsRndJ3pze72Ms"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.442Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJoRGAWMsUrjsRVBq_kbUfV34"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.518Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJQaG3PeoVrjsRjCxYK28vqSk"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.594Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJUT84Nb4UrjsRQt-fQWs2HLE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.672Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ____v5UUrjsRzRfV05YR67Q"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.750Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJq6qq-voWrjsRsywlCAWn8wI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.819Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJidirUk4XrjsRCIZDQEL-Fa8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.896Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJSXL1UYwXrjsRaasJJRwTFCg"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:34.965Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJA4yQD8EXrjsRJ8j-0C8RSP8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.036Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ17TG0u0ZrjsRYG75iJeJeIY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.117Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJj0j7rxEZrjsRP5mXWsvxNRo"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.191Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJW-o5jAoXrjsRkekADm1eAuI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.254Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJeTD3fKYZrjsRBJRCFBY5Iqg"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.329Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJs7ZtQUEXrjsRUJDEYR0w1gE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.406Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ5fKXnXMZrjsRsoIurkxcMso"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.474Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJbw7z5eUXrjsRpkJoNGa4LKw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.547Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJc5-3N54ZrjsRbrrRVLZQRAc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.625Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ-ZIjFuUZrjsRaV_RUn7gLEc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.699Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJUfXcN6gXrjsRDDDoCCSU7b0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.805Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJb345NkoWrjsR1RWJPlPP1BU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.886Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ71usrrEXrjsRr0gr3HCVEhA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:35.986Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJS2Xd4E4XrjsRbt3mLOa3ZnM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.073Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJXzAykawXrjsRQaRtwO3kz38"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.180Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ46Fmt4kXrjsR7BDmY3fXYqc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.251Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJbS-vcxoXrjsRAymzj5DSZMk"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.350Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJJ8a8F_8XrjsRBV3GrhLokhU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.429Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJS2JeKN8XrjsRWoBBEVC98Cc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.570Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJa2HmmbAXrjsR3lvq1lRd1U4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.636Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJr8QNATEZrjsR0XMmwmZrfwI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.727Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJIz768xEXrjsRwZ956DOdUDg"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.801Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJMzkLGMgXrjsRq8MiCSU8LcM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.878Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJeZX3SA0XrjsRkkFTmdxnJ4M"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:36.949Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJgaqEmGAXrjsRoQdhUNvdOJA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.023Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJrf-RWK0ZrjsRSw-y9Xa5W7g"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.124Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ98VEJvIZrjsReWA9JlfzYqs"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.194Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJi_N2bB4ZrjsRTOTu3ug4KVc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.259Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJAQDVgCgYrjsRcQZ2s84YqkE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.328Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJt1-QaHsZrjsRPn2loleXeVs"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.403Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJp0U5FfgYrjsRJpzcdo5QKaM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.475Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJzc3qGWsZrjsRlKi1EFuV_Ak"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.546Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ77hUuIwZrjsRFj4jDpb8Oxc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.620Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJj3YnalYYrjsRgVOBk1iLxbY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.691Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJTRBUKlcYrjsRGv-eS1d37xc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.768Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ0xoQMRsZrjsR7uUBI90jNPA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.836Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJF0Y1VMAZrjsR_316U8u8Qns"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.903Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJfZB1JbEjrjsRQaoSONJd-eQ"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:37.980Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJAQAn89wfrjsR_6JU0cS42CA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.070Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJr-Udu1kYrjsR44v9P6azPUQ"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.133Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJDZxxiJwZrjsRDsmHVR2VyQU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.204Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJJ8E26q4YrjsRmrAEguPc2WA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.275Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJrbsClE8YrjsRQNaiXL1QNcY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.343Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJrVKEla8jrjsRGi9VoWzmrLU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.412Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ8c4WftsjrjsRR_r5lvmAZKI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.492Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ2Q9uwlEZrjsRfhFMmGRvE2s"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.585Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ-xjNaIwYrjsRkMYZaDJ-GrE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.648Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ62pHAbsfrjsRPKCneJgA87U"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.740Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJUUcR1esZrjsRK_3VLaChKuw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.810Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJcQ0aCYIfrjsR4sN_8YCwBEg"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.881Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJoRmr1VYYrjsRuo0uEjf6OLM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:38.962Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ8cSEipsQrjsRyb12naMQYGA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.031Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJq8pmEJoYrjsRJrsDKYaa1bo"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.099Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJR6RHLSE9rjsRERFbArf63X0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.170Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJU5RqFQA9rjsRA2jailpLqTE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.261Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ3y6kZWk_rjsRFNjyB2Lf0Zw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.337Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJD1Xzd6U9rjsRHMFA_fhq3qg"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.442Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJLQzj89g9rjsRC2BynJm7NrU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.511Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJCXyYp_Y7rjsRSAi5Q18mf7c"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.619Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ7cFPJRk9rjsRvu4lGm24QYg"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.681Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ3ffpDio8rjsRyGemumkequc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.833Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ6elFUi48rjsR_miPMq-Bp10"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:39.933Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJu8ilWII-rjsRz0qqW9YZ-BI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.047Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ8TqFQMQ9rjsRGVNee9Dh554"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.122Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJk-nRMLU9rjsRb5zf2rgleqw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.230Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJj84NZeI9rjsRDObRsRXamzQ"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.300Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJx23mDGE_rjsRs7rAd7GbQOM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.399Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJs453LsM9rjsRX-cSNMWvGOY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.468Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJH37j8is9rjsRMcTNoR_mqQc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.546Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJzwZ55Wg-rjsRcaD5Chc3ENY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.632Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJV75eQ0E9rjsRWBf-u_lsZJU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.715Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ5WpGX5I_rjsRVwxKzbBA__w"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.796Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJm2KpJyU_rjsR5IsTT_Tjm0w"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.878Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJywPKNMg9rjsRRB34TYBn8Gk"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:40.950Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ-bOMkUg8rjsRL5zMgdQl7_Y"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.034Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJTdxa9Hk-rjsRHF-7i171Qio"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.108Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJBTCXw0I_rjsRirZXuzWgBMo"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.237Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ5fx_2bk9rjsRfIk4G3vtJZc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.309Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJfXt1WUg8rjsRe5F3Cu9dzzk"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.447Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJnYhOyVo-rjsRxksfThU2_10"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.522Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ-ZK0du49rjsRIu_zWzFade0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.605Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJE8R9PncWrjsRZkEjYFAo4KQ"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.674Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJe3ojmnM8rjsRN32XZLW3X3E"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.751Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJk1SOyG48rjsRVqRN2Rmf8oY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.818Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJWcI1DwA9rjsR7wwstNZKTJ4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.900Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJlafBBm8VrjsRVbansUlZsBM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:41.977Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJKSTTGn8VrjsRtbtjxrKuwrM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.060Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJpzfx4kYVrjsRuKyRKrSfTV0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.138Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJIxYG8WIVrjsRIvGPc7Fqg9s"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.215Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJRxTmQkcVrjsRT6y8OFeF494"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.285Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJYW7IcKRqrjsR1BNL3SDMPwo"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.353Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJaxBdlzgVrjsRRlc1mIE3s6U"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.426Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJNTP81JwVrjsRcppiRUoZX6o"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.505Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJewZVg40_rjsRkwKZXCseCmQ"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.570Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJG2TZb0YVrjsRi045qacjCm8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.673Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJtdOafTgVrjsRs1NC5B4pY4g"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.740Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJPUKaLm4VrjsRTtehrNe9mAo"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.859Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJR3hJTj4VrjsRlZ-40ytfxfY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:42.980Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJuf1aarAVrjsRDf-hMnxuwY0"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.103Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJTfyQMYMVrjsRJzaddQqKrwU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.180Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJvSfZhss_rjsRy_X5yYD7D1E"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.292Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJTbQHEts_rjsRA06141khfZU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.365Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJRyWL1mQVrjsRS-bb7ai6_o4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.433Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJyUAqNHYVrjsRObry4_EclFM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.517Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJj6xMdJEVrjsRwBfar28WiwE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.580Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJQS_q0VJtrjsRC8ESDyZh7nA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.642Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJzTw3FKoTrjsRyKdUPO4jTls"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.712Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJESM5cO9rrjsREXebvSupiSI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.791Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJBeNdGgBrrjsR28og3fl7Qyo"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.882Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJodyIaqJsrjsRFENqsAIWTR8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:43.943Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJA7NvvSdprjsRD4a3dGHoaeA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.039Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJr7coHSNtrjsRVXNrtrkWDoU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.110Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJv8m4muFrrjsRsk0LrGANC1A"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.179Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJR58rSSdBrjsRgBITQC5E1FY"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.249Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ-84nObcSrjsRgWo_LN2ctqI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.313Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJM9DNALgTrjsR3qmY6rTKGRI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.392Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJQ3J_ClNrrjsRkacKt2dJahA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.469Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJi5q7CalsrjsRQBCGQDTb0Cc"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.536Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJkcGNFwVrrjsROwx5998jIi4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.603Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ865NtC5trjsR8_nLYPU9xnE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.667Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ5aypbAMSrjsRuSvRZvVXejo"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.738Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ3SU3Z6sTrjsRRwRpZWBwUmk"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.807Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJV66Pw2QRrjsRDYapn2bAckI"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.871Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJWee3yaMPrjsR2AvXVK6o9PA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:44.939Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJQ17PM-sRrjsR_cncwzdCGc4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.009Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJdY5EIIIPrjsRXFRQR-UTnKw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.080Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJg_DpIIoRrjsRQ8rqSXxj_JU"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.148Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJr1BWhNoTrjsRQgt1rappB1Q"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.226Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJgcd1fvoNrjsR5CKwaXzsGqE"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.302Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJX1OF_rMTrjsRO_bZT_QJb7I"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.380Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJM7jivvgRrjsR7sJ5roED56o"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.454Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ1XuL_f8NrjsR-oqvBca8sB8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.527Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJJT5gio0RrjsRch8vrVYwHZM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.589Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJuSwiK4YNrjsRjmrUWL-wm28"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.666Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJfzyurN8QrjsRUvpAWP-GZP4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.737Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJH_XgKyoTrjsRlCVDvwQq7JA"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.811Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJZRdpkDINrjsR1OsrLFeC4j8"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.882Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJp9NSChgTrjsRlv3TZLrrU5c"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:45.952Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJiyVNYIcPrjsR9ywPYwkk0j4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:46.024Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJDdICKEkTrjsRgmF6SEhqglQ"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:46.089Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJL3kjJlsTrjsR7FJQv4QzTb4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:46.153Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ_ysTgJ4RrjsRYQV8riRWm5U"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:46.230Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJnVtNC0kRrjsRARIyR2UemYo"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:46.296Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJaysPOwkRrjsRiY95K2b2Mbw"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:46.360Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJA2Aa_JURrjsRXeWJgi41eRM"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:46.435Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJ3f1dz1IQrjsRIC1wP3Ro1ww"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:46.519Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJOUwSp54RrjsRlJYltz1Ke2Y"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:46.614Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJi9LBMOgQrjsRgNExyBtaTL4"
+      }
+    },
+    {
+      "timestamp": "2026-09-18T11:37:46.703Z",
+      "callType": "place_details",
+      "meta": {
+        "placeId": "ChIJrTr_9jMRrjsR0JIuOKMPWkU"
+      }
+    }
+  ]
+}

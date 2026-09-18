@@ -30,20 +30,20 @@ export const ContactPage: React.FC = () => {
 
   const faqs = [
     {
-      q: 'How accurate are the 3D dimensions of each wedding hall?',
-      a: 'Our spatial mapping team verifies the physical length, width, and ceiling heights directly with the venue administration. Table counts and stage dimensions in our 3D simulator reflect real banquet layouts with high precision.',
+      q: 'How do you verify the ratings and reviews for each hall?',
+      a: 'We directly integrate with the Google Places API to bring genuine ratings, total review counts, and authentic reviews from families and couples who hosted celebrations at each venue.',
     },
     {
       q: 'Do I need to pay ShaadiSpots any fee to book a banquet?',
       a: 'No! ShaadiSpots is 100% free for couples and families. All bookings and financial arrangements are made directly with the venue management at direct rates.',
     },
     {
-      q: 'I am a marriage hall owner. How can I list my banquet with a 3D model?',
-      a: 'Simply send us a message below selecting "List My Venue". Our 3D capture team will coordinate a scan or convert your architectural floor plan into an interactive 3D digital twin.',
+      q: 'I am a marriage hall owner. How can I list my venue on ShaadiSpots?',
+      a: 'Simply send us a message below selecting "List My Venue". Our onboarding team will verify your property and showcase your banquet to thousands of active couples.',
     },
     {
-      q: 'Can I visit the venue in person after checking the 3D tour?',
-      a: 'Yes! In fact, we encourage families to shortlist 2-3 venues via our 3D previewer first, then use our enquiry form to schedule in-person site visits and food tastings.',
+      q: 'Can I visit the venue in person before booking?',
+      a: 'Yes! We encourage families to shortlist 2-3 venues on ShaadiSpots, inspect their photo galleries and reviews, then schedule in-person site visits and food tastings.',
     },
   ];
 
@@ -59,7 +59,7 @@ export const ContactPage: React.FC = () => {
           Contact Our Concierge Desk
         </h1>
         <p className="text-stone-600 text-sm sm:text-base max-w-xl mx-auto">
-          Need help picking the right banquet for your guest count or want to list your wedding property in 3D? Reach out to us.
+          Need help picking the right banquet for your guest count or want to list your wedding property? Reach out to us.
         </p>
       </div>
 
@@ -177,7 +177,7 @@ export const ContactPage: React.FC = () => {
                 >
                   <option value="Venue Enquiry">Assistance Shortlisting Venues</option>
                   <option value="List My Venue">List My Banquet on ShaadiSpots (Venue Partner)</option>
-                  <option value="3D Scan Request">Request a 3D Digital Twin Scan</option>
+                  <option value="Site Visit">Schedule a Venue Site Visit</option>
                   <option value="General Feedback">General Feedback & Support</option>
                 </select>
               </div>

@@ -25,3 +25,7 @@ Thumbs.db
 *.sln
 *.sw?
 
+# Files
+places_detailed.json
+places_output.csv
+

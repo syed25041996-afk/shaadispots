@@ -2,12 +2,6 @@
  * Hall Data Models and Types for ShaadiSpots
  */
 
-export interface HallDimensions {
-  width: number;  // Hall width in metres
-  length: number; // Hall length in metres
-  height: number; // Ceiling height in metres
-}
-
 export interface Review {
   id: string;
   author: string;
@@ -15,6 +9,7 @@ export interface Review {
   date: string;
   comment: string;
   eventType?: string;
+  avatarUrl?: string;
 }
 
 export interface Hall {
@@ -34,17 +29,15 @@ export interface Hall {
   amenities: string[];
   contactPhone: string;
   contactEmail: string;
+  website?: string;
   mapLink: string;
+  lat?: number;
+  lng?: number;
   isAC: boolean;
   hasParking: boolean;
   hasRooms: boolean;
   vegOnly: boolean;
   featured: boolean;
-  
-  // 3D Viewer metadata
-  modelUrl?: string;            // URL to .glb / .gltf file (optional)
-  dimensions: HallDimensions;  // In metres
-  tableCount: number;           // Number of banquet tables for procedural scene
 
   // Detailed reviews list
   reviews?: Review[];
@@ -73,4 +66,3 @@ export interface HallFilters {
   hasRooms?: boolean;
   sortBy?: 'price-asc' | 'price-desc' | 'rating-desc' | 'capacity-desc';
 }
-

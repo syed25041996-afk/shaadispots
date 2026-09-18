@@ -34,7 +34,7 @@ export const FeaturedCarousel: React.FC<FeaturedCarouselProps> = ({ halls }) => 
               Featured Wedding Venues
             </h2>
             <p className="text-stone-600 text-xs sm:text-sm mt-1 max-w-xl">
-              Premier banquets and royal palaces equipped with full 3D interactive spatial previews.
+              Premier banquets, kalyana mantapas, and royal palaces verified with high-resolution photo galleries and real guest reviews.
             </p>
           </div>
 

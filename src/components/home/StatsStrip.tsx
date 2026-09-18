@@ -1,19 +1,19 @@
 import React from 'react';
-import { Building2, HeartHandshake, Star, Compass } from 'lucide-react';
+import { Building2, HeartHandshake, Star, Camera } from 'lucide-react';
 
 export const StatsStrip: React.FC = () => {
   const stats = [
     {
       icon: Building2,
-      value: '120+',
+      value: '250+',
       label: 'Verified Venues',
-      sub: 'Top banquets & palaces',
+      sub: 'Across Bengaluru hubs',
     },
     {
-      icon: Compass,
-      value: '100%',
-      label: '3D Virtual Previews',
-      sub: 'Accurate spatial walkthroughs',
+      icon: Camera,
+      value: '1,200+',
+      label: 'Real Photos',
+      sub: 'Direct Google CDN galleries',
     },
     {
       icon: HeartHandshake,
@@ -23,8 +23,8 @@ export const StatsStrip: React.FC = () => {
     },
     {
       icon: Star,
-      value: '4.9 ★',
-      label: 'Average Host Rating',
+      value: '4.8 ★',
+      label: 'Average Google Rating',
       sub: 'From genuine verified reviews',
     },
   ];
@@ -60,4 +60,3 @@ export const StatsStrip: React.FC = () => {
     </div>
   );
 };
-
