@@ -21,7 +21,7 @@ import fs from "fs";
 // CONFIG
 // ============================================================
 
-const API_KEY = process.env.GOOGLE_PLACES_API_KEY || "AIzaSyCiHUCAKad4lhIDOFWUmo9K6wVfyGy4T-U";
+const API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 const SEARCH_KEYWORD = "wedding hall";
 const GRID_RADIUS_M = 5000; // 5 km radius per grid point
 
